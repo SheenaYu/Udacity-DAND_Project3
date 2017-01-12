@@ -1,0 +1,22 @@
+This is a text file containing a list of Web sites, books, forums, blog posts, github repositories etc that I referred to or used in this submission.
+
+[Udacity Data Wrangling with MongoDB Course]
+(https://www.udacity.com/course/data-wrangling-with-mongodb--ud032)
+
+[Sample Data Wrangling Project1 by Matthew Banbury]
+(https://docs.google.com/document/d/1F0Vs14oNEs2idFJR3C_OPxwS6L0HPliOii-QpbmrMo4/pub)
+
+[Sample Data Wrangling Project2 by AllenReyes]
+(https://github.com/allanbreyes/udacity-data-science/tree/master/p2)
+
+[OpenStreetMap Wiki Page]
+(http://wiki.openstreetmap.org/wiki/Main_Page)
+
+[Detect OSM changeset with inccorect edits]
+(http://neis-one.org/2016/01/suspicious-osm/)
+
+[MongoDB Query Documents]
+(https://docs.mongodb.com/manual/tutorial/query-documents/)
+
+[Python ElementTree Documents]
+(https://docs.python.org/2/library/xml.etree.elementtree.html)

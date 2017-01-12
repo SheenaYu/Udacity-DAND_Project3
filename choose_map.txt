@@ -1,0 +1,6 @@
+This is a text file containing a link to the map position I wrangled in my project, a short description of the area and a reason for my choice.
+
+In this project, I’m going to explore an OpenStreetMap dataset which focuses on Dallas,TX area. I’ve been living in Dallas for one year where I finished my Master’s degree at Southern Methodist University. There’re many places I haven't got a chance to visit so I think it is a wonderful metropolitan to explore through the data wrangling techniques I gained.
+
+Source of Dallas map data (OSM XML):
+(https://mapzen.com/data/metro-extracts/metro/dallas_texas/)

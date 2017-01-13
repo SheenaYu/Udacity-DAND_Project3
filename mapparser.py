@@ -12,6 +12,11 @@ OSMFILE = 'data/dallas_texas.osm'
 def count_tags(filename):
     """
     Parses the OSM file and counts the tags by type.
+    Args:
+        filename: name and position of the OSM file
+    Returns:
+        element_count: dictionary storing elements' tag names and its related frequency
+        k_attributes: dictionary storing k attributes and its correponding value in each "tag" element
     """
     element_count = {}
     k_attributes = {}

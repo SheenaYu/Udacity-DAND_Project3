@@ -32,6 +32,10 @@ TIGER_NAME_KEYS = ["name_direction_prefix", "name_base", "name_type", "name_dire
 def update_postcode(value):
     """
     Replace any postcodes that are not of length 5 with 5-digit string
+    Args: 
+        Original postcodes or zipcodes extracted directly from the OSM XML dataset
+    Returns:
+        5-digit postcodes or zipcodes
     """
     postcode = ''
     for char in value:
@@ -44,6 +48,10 @@ def update_postcode(value):
 def update_street(name, mapping):
     """
     Scan through each substring and update any matched substring to their values in dictionary 'mapping'
+    Args: 
+        street names extracted directly from the OSM XML dataset
+    Returns:
+        updated street name without any abbreviated words
     """
     words = name.split()
     for w in range(len(words)):
@@ -55,6 +63,13 @@ def update_street(name, mapping):
 def process_address_tiger(element, node, address, tiger):
     """
     Specifically deal with the dictionaries 'address' and 'tiger'
+    Args: 
+        element: element of OSM XML file
+        node: dictionary storing data for each element with tag name "node" or "way"
+        address: sub-dictionary as value of the key "address" in the dictionary "node"
+        tiger: sub-dictionary as value of the key "tiger" in the dictionary "node"
+    Returns:
+        complete dictionaries
     """
     street = {}
     zipcode = set()
@@ -123,8 +138,12 @@ def process_address_tiger(element, node, address, tiger):
 
 def create_common_attributes_dict(element, common_attr_list, node):
     """
-    Create a dictionary to store common attributes for the nodes
-    Common attributes are: "version", "changeset", "timestamp", "user", "uid".
+    Args:
+        element: element of OSM XML file
+        common_attr_list: list of common attributes ("version", "changeset", "timestamp", "user", "uid")
+        node: dictionary storing data for each element with tag name "node" or "way"
+    Returns:
+        a complete dictionary storing common attributes for the nodes
     """
     if "created" not in node:
         node["created"] = {}

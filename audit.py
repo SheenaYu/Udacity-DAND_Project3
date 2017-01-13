@@ -39,6 +39,11 @@ mapping = { "E": "East", "E.": "East", "W.":"West", "W": "West", "N.": "North", 
 def audit_street_type(street_types, street_name):
     """
     Adds potentially problematic street names to list 'street_types'
+    Args:
+        street_types: a dictionary counting the occurrences of unexpected street types
+        street_name: a string of full street name
+    Returns:
+        a complete street_type dictionary recording unexpected street types
     """
     m = street_type_re.search(street_name)
     if m:
@@ -79,6 +84,13 @@ def update(name, mapping):
     """
     Scan through each word in the street name 
     and update any matched word to their corresponding values in dictionary 'mapping'
+
+    Args:
+        name: string of full street name
+        mapping: dictionary "mapping" 
+
+    Returns:
+        Updated street name
     """
     words = name.split()
     for w in range(len(words)):

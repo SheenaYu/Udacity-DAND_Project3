@@ -1,4 +1,4 @@
-# Project 3: OpenStreetMap Data Wrangling Project ([PDF](Udacity-DAND_Project3/DataWranglingProject_Sheena.pdf))
+# Project 3: OpenStreetMap Data Wrangling Project ([PDF](https://github.com/SheenaYu/Udacity-DAND_Project3/blob/master/DataWranglingProject_Sheena.pdf))
 ####Author: Sheena YU
 
 ## Summary

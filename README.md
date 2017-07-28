@@ -121,11 +121,14 @@ Then switched to the database I will use.
 * **Statistics of Dallas Map Data**
 
   * Number of documents
+  
   ```
 > db.dallas.find().count()
   3022261
   ```
+  
   * Number of nodes and ways
+  
   ```
 > db.dallas.find({"type":"way"}).count()
   310384
@@ -138,6 +141,7 @@ Then switched to the database I will use.
 > db.dallas.distinct("created.user").length
   1808
   ```
+  
   * Top 10 contributing users
   ```
 > db.dallas.aggregate([{"$group" : {'_id':'$created.user',
